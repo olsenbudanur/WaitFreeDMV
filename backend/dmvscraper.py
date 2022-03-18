@@ -25,9 +25,9 @@ db = firestore.client()
 
 #
 # Set up the credentials for Twilio
-account_sid = 'AC64ce57a561dd17c16c71b020a10b0392'
-auth_token = '51033b2c5ca111f7d68ab778eb26db5a'
-twilio_number = '+19373586771'
+account_sid = 'CANT SHARE THIS HERE'
+auth_token = 'CANT SHARE THIS HERE'
+twilio_number = 'CANT SHARE THIS HERE'
 client = Client(account_sid, auth_token)
 
 
