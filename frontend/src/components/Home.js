@@ -22,7 +22,7 @@ const Home = () => {
           <b> Why wait for an DMV appointment? Schedule now and save time!</b>
           </div>
           <div className="home-text">
-          <Button variant="contained" href="/appointment"
+          <Button variant="contained" href="/appointment" id ="apptbtn"
              size='large'>
             One-Click Schedule
           </Button>
