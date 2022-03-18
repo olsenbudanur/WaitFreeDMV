@@ -1,14 +1,12 @@
 .navbar {
-    /* background-color: #131515; */
-    background-color: rgba(0,0,0,0.0);
+    background-color: sienna;
     height: 10vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    display: fixed;
     top: 0;
-    z-index: 20;
+    /* z-index: 20; */
   }
   
   .nav-container {
@@ -28,14 +26,14 @@
     text-decoration: none;
     font-size: 2rem;
     flex-grow: 1;
-    
   }
   
   .nav-menu {
-    display: flex;
+    /* display: flex; */
     list-style: none;
     text-align: center;
     margin-right: 2rem;
+    position: relative;
   }
   
   .nav-links {
