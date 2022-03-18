@@ -1,14 +1,28 @@
 .parallax{
-    height: 70vh;
+    height: 65vh;
     width: 100vw;
 }
 
 .title{
-    width: auto;
-    height: 25vw;
+    font-size: 10vh;
     color: white;
     text-align: center;
-    vertical-align: center;
-    margin-top: 7vw;
+    margin-top: 10vw;
     text-size-adjust: 50%;
+}
+
+.home-text{
+    font-size:4vh;
+    padding: 20px;
+    color: black;
+    align-content:center;
+    text-align: center;
+}
+
+.text{
+    font-size:2vh;
+    padding: 10px;
+    color: black;
+    align-content:center;
+    text-align: center;
 }
