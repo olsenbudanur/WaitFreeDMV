@@ -30,13 +30,13 @@ const Home = () => {
           </div>
           <div className="home-text">
           <Button variant="contained" href="/appointment" id ="apptbtn"
-             size='large'>
+             size='large' style={{zIndex:'10'}}>
             One-Click Schedule
           </Button>
           </div>
           </ScrollPage>
 
-          <ScrollPage page = {1}>
+          <ScrollPage page = {1} style={{zIndex:'1'}}>
             <Animator animation={ZoomInScrollsOut}>
               <h2>What is Wait Free DMV?</h2>
             </Animator>

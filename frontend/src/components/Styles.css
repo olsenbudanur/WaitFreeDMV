@@ -34,10 +34,16 @@
     width: 100%;
   }
 
-  .column {
+.column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
     text-align:center;
+}
+
+#apptbtn {
+    background: linear-gradient(rgba(250, 75, 0, 0.5), transparent);
+    background-color: sienna;
+    font-family: "Lucida Console", "Courier New", monospace;
   }
