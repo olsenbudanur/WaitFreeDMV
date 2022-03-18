@@ -1,0 +1,14 @@
+.parallax{
+    height: 70vh;
+    width: 100vw;
+}
+
+.title{
+    width: auto;
+    height: 25vw;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 7vw;
+    text-size-adjust: 50%;
+}

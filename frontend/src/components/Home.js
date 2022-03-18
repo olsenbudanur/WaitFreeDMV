@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Parallax } from 'react-parallax';
 import sloth from './assets/sloth.gif';
+import "./Styles.css";
 
 const Home = () => {
   return (
@@ -9,17 +10,16 @@ const Home = () => {
       <h1>WaitFreeDMV</h1>
       <Link to="/appointment" >link</Link>
 
-      {/* <meta name="viewport" content="initial-scale=1"></meta>
+      <meta name="viewport" content="initial-scale=1"></meta>
       <div className="bruh">
-        <Parallax bgImage={sloth} bgImageAlt="City skyline with moving clouds" strength={500}>
-          <div className="blockaideTitle">BLOCKAIDE</div>
+        <Parallax className="parallax" bgImage={sloth} bgImageAlt="slow dmv sloth from utopia" strength={500}>
+          <div className="title">Wait Free DMV</div>
         </Parallax>
-        <div class="aboutTextBlock">
-          <b style={{text:"white"}}>Breaking through the digital blockade with BlockAide</b><br></br><br></br>
-          BlockAide is a crowdfunding platform built on top of the Ethereum blockchain. BlockAide aims to democratize crowdfunding by providing...
+        <div>
+          <b style={{text:"white"}}> Why Wait for a DMV Appointment?</b><br></br>
         </div>
          
-      </div> */}
+      </div>
       </div>
   );
 };
