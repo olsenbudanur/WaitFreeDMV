@@ -1,22 +1,22 @@
-.parallax{
-    height: 65vh;
-    width: 100vw;
+.parallax {
+  height: 65vh;
+  width: 100vw;
 }
 
-.title{
-    font-size: 10vh;
-    color: white;
-    text-align: center;
-    margin-top: 10vw;
-    text-size-adjust: 50%;
+.title {
+  font-size: 10vh;
+  color: white;
+  text-align: center;
+  margin-top: 10vw;
+  text-size-adjust: 50%;
 }
 
-.home-text{
-    font-size:4vh;
-    padding: 20px;
-    color: black;
-    align-content:center;
-    text-align: center;
+.home-text {
+  font-size: 4vh;
+  padding: 20px;
+  color: black;
+  align-content: center;
+  text-align: center;
 }
 
 .text{
@@ -33,7 +33,7 @@
     flex-wrap: wrap;
     width: 100%;
   }
-  
+
   .column {
     display: flex;
     flex-direction: column;
