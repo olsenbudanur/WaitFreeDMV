@@ -36,14 +36,6 @@ const Home = () => {
           </ScrollPage>
         </ScrollContainer>
 
-        {/* <Parallax className="parallax" bgImage={sloth} bgImageAlt="slow dmv sloth from utopia" strength={500}>
-          <div className="title">Wait Free DMV</div>
-        </Parallax>
-
-        <div className='home-text'>
-          <b>What is Wait Free DMV?</b>
-
-        </div> */}
       
       </div>
   );
