@@ -20,7 +20,7 @@ const Appointment = () => {
   };
 
   var typeList = types.map(function(type){
-    return <MenuItem value={type}>{type}</MenuItem>;
+    return <MenuItem value={type} key="{type}">{type}</MenuItem>;
   })
 
 
@@ -30,12 +30,12 @@ const Appointment = () => {
     <div>
       <div className="text"><h1>Make Appointment</h1></div>
 
-      <div class='row'>
+      <div className='row'>
       
         <div className='column'>
         
         <div style={{padding:'10px'}}>
-        <FormControl sx={{ m: 1, minWidth: '25%' }}>
+        <FormControl sx={{ m: 1, minWidth: '25%' }} >
         <InputLabel id="demo-simple-select-label">State</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -90,11 +90,11 @@ const Appointment = () => {
         </div>
 
         <div style={{padding:'10px'}}>
-        <TextField id="standard-basic" label="Number" type="number" variant="standard" />
+        <TextField id="standard-basic" label="Number" required type="number" variant="standard" />
         </div>
 
         <div style={{padding:'10px'}}>
-        <TextField id="standard-basic" label="Dealine(# of weeks from now)" type="number" variant="standard" />
+        <TextField id="standard-basic" label="Dealine(# of weeks from now)" required type="number" variant="standard" />
         </div>
 
         <div className='text'><Button variant="contained" id="apptbtn">Submit</Button></div>
