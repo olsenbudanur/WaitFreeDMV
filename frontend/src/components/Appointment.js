@@ -1,7 +1,7 @@
 import React from 'react';
 import db from "./firebase_config";
 import { doc, setDoc } from "firebase/firestore";
-import { Button, TextField, FormControl, InputLabel, Select, MenuItem, DialogContent} from '@mui/material';
+import { Button, TextField, FormControl, InputLabel, Box, Select, MenuItem, DialogContent} from '@mui/material';
 import "./Styles.css";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import MapSection from './Map'
@@ -76,7 +76,7 @@ const Appointment = () => {
         <div className='column'>
 
         <div style={{padding:'10px'}}>
-        <FormControl sx={{ m: 1, minWidth: '25%' }}>
+        <FormControl sx={{ m: 1, minWidth: '30%' }}>
         <InputLabel id="demo-simple-select-label">State</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -94,12 +94,14 @@ const Appointment = () => {
         </div>
 
         <div style={{padding:'10px'}}>
-        <TextField id="standard-basic" label="ZIP Code" type="number" variant="standard"
+        <FormControl sx={{ m: 1, minWidth: '30%' }}>
+        <TextField id="standard-basic" label="ZIP Code" type="number" variant="outlined"
           value={zip} onChange= {(e) => setZip(e.target.value)}/>
+        </FormControl>
         </div>
 
         <div style={{padding:'10px'}}>
-        <FormControl sx={{ m: 1, minWidth: '25%' }}>
+        <FormControl sx={{ m: 1, minWidth: '30%' }}>
         <InputLabel id="demo-simple-select-label">Distance(miles)</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -118,7 +120,7 @@ const Appointment = () => {
         </div>
 
         <div style={{padding:'10px'}}>
-          <FormControl sx={{ m: 1, minWidth: '25%' }}>
+          <FormControl sx={{ m: 1, minWidth: '30%' }}>
           <InputLabel id="demo-simple-select-label">Type of Appointment</InputLabel>
           <Select
             labelId="demo-simple-select-label"
@@ -133,13 +135,17 @@ const Appointment = () => {
         </div>
 
         <div style={{padding:'10px'}}>
-        <TextField id="standard-basic" label="Number" type="number" variant="standard"
-          value={number} onChange= {(e) => setNumber(e.target.value)}/>
+          <FormControl sx={{ m: 1, minWidth: '30%' }}>
+          <TextField id="standard-basic" label="Number" type="number" variant="outlined"
+            value={number} onChange= {(e) => setNumber(e.target.value)}/>
+          </FormControl>
         </div>
 
         <div style={{padding:'10px'}}>
-        <TextField id="standard-basic" label="Dealine(# of weeks from now)" type="number" variant="standard"
+        <FormControl sx={{ m: 1, minWidth: '30%' }}>
+        <TextField id="standard-basic" label="Deadline(# of weeks from now)" type="number" variant="outlined"
           value={time} onChange= {(e) => setTime(e.target.value)}/>
+        </FormControl>
         </div>
 
         <div className='text'><Button variant="contained" id="apptbtn" onClick={pushUserRequest}>Submit</Button></div>
