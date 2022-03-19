@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Parallax } from 'react-parallax';
 import sloth from './assets/sloth.gif';
@@ -9,8 +9,14 @@ import Typewriter from 'typewriter-effect';
 
 const ZoomInScrollsOut = batch(StickyIn(), FadeIn(),ZoomIn() );
 const Home = () => {
-  return (
+  const [state, setState] = useState('');
     
+  const handler = (event) => {
+      // changing the state to the name of the key
+    // which is pressed
+    setState(true);
+  };
+  return (
     <div>
         <ScrollContainer>
           <ScrollPage page = {0}>
@@ -19,7 +25,7 @@ const Home = () => {
             <div className="title">
             <Typewriter 
               onInit = {(typewriter => {
-                typewriter.typeString("Tired  of waiting?").pauseFor(1500).deleteAll().typeString("Wait Free DMV").start();
+                typewriter.typeString("Tired of waiting?").pauseFor(1500).deleteAll().typeString("WaitFree DMV").start();
               })}
             /></div>
              {/* <div className="title">Wait Free DMV</div> */}
@@ -38,8 +44,16 @@ const Home = () => {
 
           <ScrollPage page = {1} style={{zIndex:'1'}}>
             <Animator animation={ZoomInScrollsOut}>
-              <h2>What is Wait Free DMV?</h2>
+              <h2 className="h2txt">What is WaitFree DMV?</h2>
             </Animator>
+            {/* <p className="center">
+              Press any keys to continue
+            </p> */}
+            <div className="center"><Typewriter 
+              onInit = {(typewriter => {
+                typewriter.typeString("WaitFreeDMV allows you to save time scrolling through DMV webpage and book your appointment faster!").pauseFor(5000).start();
+              })}
+            /></div>
           </ScrollPage>
         </ScrollContainer>
 
