@@ -43,6 +43,7 @@
   padding: 0.5rem 1rem;
   height: 100%;
   border-bottom: 3px solid transparent;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .fa-code {
   margin-left: 1rem;
