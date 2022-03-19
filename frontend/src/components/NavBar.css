@@ -45,34 +45,8 @@
   border-bottom: 3px solid transparent;
   font-family: "Lucida Console", "Courier New", monospace;
 }
-.fa-code {
-  margin-left: 1rem;
-}
 
 .nav-item {
   line-height: 40px;
   margin-right: 1rem;
-}
-
-.nav-item:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 0;
-  background: transparent;
-  transition: width 0.7s ease, background-color 0.5s ease;
-}
-
-.nav-item:hover:after {
-  width: 100%;
-  background: #ffffff;
-}
-
-.nav-item .active {
-  color: #ccc9c2;
-  border: 1px solid #2d2327;
-}
-
-.nav-icon {
-  display: none;
 }

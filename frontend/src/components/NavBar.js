@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className='nav-logo'>
           <img alt="waitfreeDMV's logo" src={logo} width="50" height="50"/>
           </div>
-          <ul classNae='nav-menu'>
+          <ul className='nav-menu'>
               <NavLink to='/'
                 className='nav-links'>
                 Home
