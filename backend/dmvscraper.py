@@ -139,7 +139,7 @@ while True:
 
     #
     # Send a message to the user
-    message = "Hurry up, there is a DMV appointment available at " + str + "!!!"
+    message = "Hurry up, there is a Alexandria DMV appointment available at " + str + "!!!"
 
     print(userEpoch)
     print(bestTimeEpoch)
